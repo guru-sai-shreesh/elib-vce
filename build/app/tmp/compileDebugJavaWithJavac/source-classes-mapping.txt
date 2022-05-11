@@ -1,4 +1,4 @@
-com/example/e_vce/BuildConfig.java
- com.example.e_vce.BuildConfig
 io/flutter/plugins/GeneratedPluginRegistrant.java
  io.flutter.plugins.GeneratedPluginRegistrant
+com/example/e_vce/BuildConfig.java
+ com.example.e_vce.BuildConfig
