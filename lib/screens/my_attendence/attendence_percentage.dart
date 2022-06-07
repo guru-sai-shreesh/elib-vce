@@ -25,13 +25,13 @@ class _AttendencePercentageState extends State<AttendencePercentage> {
               )),
         ),
         Card(
-          color: Color.fromARGB(255, 179, 219, 252),
+          color: Color.fromARGB(221, 17, 149, 189),
           margin: EdgeInsets.only(left: 25),
           elevation: 5,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           child: Container(
-            height: 120,
+            height: 140,
             width: MediaQuery.of(context).size.width - 50,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,13 +77,13 @@ class _AttendencePercentageState extends State<AttendencePercentage> {
               )),
         ),
         Card(
-          color: Color.fromARGB(255, 179, 219, 252),
+          color: Color.fromARGB(221, 17, 149, 189),
           margin: EdgeInsets.only(left: 25),
           elevation: 5,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           child: Container(
-            height: 120,
+            height: 140,
             width: MediaQuery.of(context).size.width - 50,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

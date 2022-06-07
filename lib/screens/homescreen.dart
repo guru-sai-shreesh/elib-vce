@@ -1,3 +1,4 @@
+import 'package:e_vce/model/fetchtop10.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,27 +11,70 @@ class HomeScreen extends StatefulWidget {
 }
 
 class HomeScreenState extends State<HomeScreen> {
-  final List<String> entries = <String>['Book 1', 'Book 2', 'Book 3'];
-  final List<int> colorCodes = <int>[400, 300, 200];
-  final List<bool> alreadyClicked = <bool>[false, false, false];
+  null_builder() async {}
 
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("E-VCE"),
-          elevation:
-              defaultTargetPlatform == TargetPlatform.android ? 0.0 : 0.0,
-          backgroundColor: defaultTargetPlatform == TargetPlatform.android
-              ? Colors.white
-              : Colors.transparent,
-        ),
-        // appBar: AppBar(
-        //   title: Text("E-VCE"),
-        //   backgroundColor: Colors.transparent,
-        //   elevation: 0.0,
-        //   iconTheme: IconThemeData(color: Colors.black),
-        // ),
-        drawer: NavigationDrawer(),
-        body: Container());
+    return FutureBuilder(
+        future: null_builder(),
+        builder: ((context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/dash_background_dark.png'),
+                    fit: BoxFit.cover),
+              ),
+              child: Scaffold(
+                  appBar: AppBar(
+                    iconTheme: IconThemeData(color: Colors.white),
+                    title: Text(
+                      "E-VCE",
+                      style: TextStyle(color: Colors.white54),
+                    ),
+                    backgroundColor: Colors.transparent,
+                    elevation: 0,
+                  ),
+                  backgroundColor: Colors.transparent,
+                  // appBar: AppBar
+                  //   title: Text("E-VCE"),
+                  //   elevation: defaultTargetPlatform == TargetPlatform.android
+                  //       ? 0.0
+                  //       : 0.0,
+                  //   backgroundColor:
+                  //       defaultTargetPlatform == TargetPlatform.android
+                  //           ? Colors.transparent
+                  //           : Colors.transparent,
+                  // ),
+                  // appBar: AppBar(
+                  //   title: Text("E-VCE"),
+                  //   backgroundColor: Colors.transparent,
+                  //   elevation: 0.0,
+                  //   iconTheme: IconThemeData(color: Colors.black),
+                  // ),
+                  drawer: NavigationDrawer(),
+                  body: Container()),
+            );
+          } else {
+            return Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/login.png'),
+                    fit: BoxFit.cover),
+              ),
+              child: Scaffold(
+                  appBar: AppBar(
+                    title: Text("E-VCE"),
+                    elevation: defaultTargetPlatform == TargetPlatform.android
+                        ? 0.0
+                        : 0.0,
+                    backgroundColor:
+                        defaultTargetPlatform == TargetPlatform.android
+                            ? Colors.transparent
+                            : Colors.transparent,
+                  ),
+                  body: Center(child: CircularProgressIndicator())),
+            );
+          }
+        }));
   }
 }

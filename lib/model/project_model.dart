@@ -6,6 +6,7 @@ class Project {
   late String? documentation_address;
   late String? github_link;
   late List<String>? tags;
+  late List<String>? Categeories;
   Project(
       {required this.student_name,
       required this.project_name,

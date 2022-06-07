@@ -1,8 +1,13 @@
-import 'package:e_vce/screens/e_subscriptions/e_subscriptions.dart';
+import 'package:e_vce/model/book_model.dart';
+import 'package:e_vce/model/fetchtop10.dart';
+import 'package:e_vce/screens/books_issued/books_issued.dart';
+import 'package:e_vce/screens/e_subscriptions/librarian/lib_e_subscriptions.dart';
 import 'package:e_vce/screens/grades/grades.dart';
+import 'package:e_vce/screens/liked.dart';
 import 'package:e_vce/screens/my_attendence/my_attendence.dart';
 import 'package:e_vce/screens/projects/projects.dart';
-import 'package:e_vce/screens/search_book/search_book.dart';
+import 'package:e_vce/screens/search_book/librarian/lib_search_book.dart';
+import 'package:e_vce/screens/search_book/student/search_book.dart';
 import 'package:flutter/material.dart';
 
 import 'homescreen.dart';
@@ -53,7 +58,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   settings: RouteSettings(name: "/e_subscriptions"),
-                  builder: (context) => ESubscriptions(),
+                  builder: (context) => LibESubscriptions(),
                 ),
               )
             },
@@ -66,7 +71,20 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   settings: RouteSettings(name: "/search_book"),
-                  builder: (context) => SearchBook(),
+                  builder: (context) => LibSearchBook(),
+                ),
+              )
+            },
+          ),
+          ListTile(
+            title: Text("Issued Books"),
+            leading: Icon(Icons.search_outlined),
+            onTap: () => {
+              Navigator.of(context).popUntil(ModalRoute.withName("/")),
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  settings: RouteSettings(name: "/issued_book"),
+                  builder: (context) => BooksIssued(),
                 ),
               )
             },
@@ -134,6 +152,19 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                 MaterialPageRoute(
                   settings: RouteSettings(name: "/saved"),
                   builder: (context) => Saved(),
+                ),
+              )
+            },
+          ),
+          ListTile(
+            title: Text("Liked"),
+            leading: Icon(Icons.favorite_border),
+            onTap: () => {
+              Navigator.of(context).popUntil(ModalRoute.withName("/")),
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  settings: RouteSettings(name: "/liked"),
+                  builder: (context) => Liked(),
                 ),
               )
             },

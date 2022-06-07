@@ -12,13 +12,20 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <application
         android:name="android.app.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="e_vce" >
+        android:label="e_vce"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity
             android:name="com.example.e_vce.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -52,14 +59,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
 
-        <service
-            android:name="com.google.firebase.components.ComponentDiscoveryService"
-            android:directBootAware="true"
-            android:exported="false" >
-            <meta-data
-                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service>
+        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
 
         <uses-library
             android:name="androidx.window.extensions"
@@ -68,12 +68,10 @@
             android:name="androidx.window.sidecar"
             android:required="false" />
 
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.e_vce.firebaseinitprovider"
-            android:directBootAware="true"
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
-            android:initOrder="100" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
             android:name="com.google.android.gms.version"

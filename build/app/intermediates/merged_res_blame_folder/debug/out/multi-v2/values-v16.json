@@ -4,6 +4,25 @@
             "outputFile": "/Users/gurusaishreeshtirumalla/elib-vce/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
+                    "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/c19fe89a0c4807844acca484d2c46dec/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
                     "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",

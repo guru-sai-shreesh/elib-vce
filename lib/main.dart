@@ -1,17 +1,14 @@
-import 'package:e_vce/firebase_options.dart';
 import 'package:e_vce/screens/homescreen.dart';
+import 'package:e_vce/screens/login_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +17,6 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.grey[50],
           // scaffoldBackgroundColor: Colors.cyan[100],
         ),
-        home: HomeScreen());
+        home: LoginScreen());
   }
 }

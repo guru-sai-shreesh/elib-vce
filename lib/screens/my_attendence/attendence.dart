@@ -42,8 +42,8 @@ class _AttendenceState extends State<Attendence> {
             ),
             margin: EdgeInsets.only(left: 25, right: 25, top: 10),
             color: isPresent[index]
-                ? Color.fromARGB(255, 179, 219, 252)
-                : Color.fromARGB(255, 78, 146, 202),
+                ? Color.fromARGB(255, 150, 198, 213)
+                : Color.fromARGB(255, 17, 149, 189),
             child: Container(
               height: 60,
               padding: EdgeInsets.only(left: 25),

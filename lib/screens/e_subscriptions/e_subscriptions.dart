@@ -1,5 +1,5 @@
 import 'package:e_vce/screens/e_subscriptions/campus_tab.dart';
-import 'package:e_vce/screens/e_subscriptions/off_campus_subscriptions_tab.dart';
+import 'package:e_vce/screens/e_subscriptions/off_campus_tab.dart';
 import 'package:e_vce/widget/custom_tab_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -71,10 +71,17 @@ class _ESubscriptionsState extends State<ESubscriptions>
         //   iconTheme: IconThemeData(color: Colors.black),
         // ),
         drawer: NavigationDrawer(),
-        body: TabBarView(controller: _tabController, children: [
-          CampusTab(),
-          OffCampusSubscriptionsTab(),
-        ]),
+        body: Container(
+          decoration: BoxDecoration(
+            color: Color.fromARGB(121, 45, 109, 228),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          margin: EdgeInsets.only(left: 25, right: 25, top: 10),
+          child: TabBarView(controller: _tabController, children: [
+            CampusTab(),
+            OffCampusTab(),
+          ]),
+        ),
       ),
     );
   }
