@@ -36,45 +36,47 @@ class _MyAttendenceState extends State<MyAttendence>
           Navigator.of(context).popUntil(ModalRoute.withName("/"));
           return false;
         },
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text("E-VCE"),
-            elevation:
-                defaultTargetPlatform == TargetPlatform.android ? 0.0 : 0.0,
-            backgroundColor: defaultTargetPlatform == TargetPlatform.android
-                ? Colors.white
-                : Colors.transparent,
-            bottom: TabBar(
-              controller: _tabController,
-              labelColor: Colors.black,
-              isScrollable: true,
-              unselectedLabelColor: Colors.grey,
-              labelPadding: EdgeInsets.all(0),
-              indicatorPadding: EdgeInsets.all(0),
-              indicator: RoundedRectangleTabIndicator(
-                  weight: 2, width: 10, color: Colors.black),
-              labelStyle: GoogleFonts.openSans(
-                fontSize: 16,
-                fontWeight: FontWeight.w700,
+        child: Container(
+          color: Color.fromARGB(255, 152, 209, 255),
+          child: Scaffold(
+            appBar: AppBar(
+              title: Text("E-VCE"),
+              elevation:
+                  defaultTargetPlatform == TargetPlatform.android ? 0.0 : 0.0,
+              backgroundColor: Colors.transparent,
+              bottom: TabBar(
+                controller: _tabController,
+                labelColor: Colors.black,
+                isScrollable: true,
+                unselectedLabelColor: Colors.white70,
+                labelPadding: EdgeInsets.all(0),
+                indicatorPadding: EdgeInsets.all(0),
+                indicator: RoundedRectangleTabIndicator(
+                    weight: 2, width: 10, color: Colors.black),
+                labelStyle: GoogleFonts.openSans(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                ),
+                unselectedLabelStyle: GoogleFonts.openSans(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+                tabs: myTabs,
               ),
-              unselectedLabelStyle: GoogleFonts.openSans(
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-              ),
-              tabs: myTabs,
             ),
+            // appBar: AppBar(
+            //   title: Text("E-VCE"),
+            //   backgroundColor: Colors.transparent,
+            //   elevation: 0.0,
+            //   iconTheme: IconThemeData(color: Colors.black),
+            // ),
+            backgroundColor: Colors.transparent,
+            drawer: NavigationDrawer(),
+            body: TabBarView(controller: _tabController, children: [
+              Attendence(),
+              AttendencePercentage(),
+            ]),
           ),
-          // appBar: AppBar(
-          //   title: Text("E-VCE"),
-          //   backgroundColor: Colors.transparent,
-          //   elevation: 0.0,
-          //   iconTheme: IconThemeData(color: Colors.black),
-          // ),
-          drawer: NavigationDrawer(),
-          body: TabBarView(controller: _tabController, children: [
-            Attendence(),
-            AttendencePercentage(),
-          ]),
         ));
   }
 }

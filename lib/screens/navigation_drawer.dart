@@ -15,7 +15,7 @@ import 'schedule.dart';
 import 'resources.dart';
 import 'saved.dart';
 import 'projects/projects.dart';
-import 'exam_parers.dart';
+import 'exam_papers/exam_parers.dart';
 
 class NavigationDrawer extends StatefulWidget {
   @override

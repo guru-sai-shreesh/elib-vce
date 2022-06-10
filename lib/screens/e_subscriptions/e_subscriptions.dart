@@ -41,14 +41,12 @@ class _ESubscriptionsState extends State<ESubscriptions>
           title: Text("E-VCE"),
           elevation:
               defaultTargetPlatform == TargetPlatform.android ? 0.0 : 0.0,
-          backgroundColor: defaultTargetPlatform == TargetPlatform.android
-              ? Colors.white
-              : Colors.transparent,
+          backgroundColor: Colors.transparent,
           bottom: TabBar(
             controller: _tabController,
             labelColor: Colors.black,
             isScrollable: true,
-            unselectedLabelColor: Colors.grey,
+            unselectedLabelColor: Colors.white70,
             labelPadding: EdgeInsets.all(0),
             indicatorPadding: EdgeInsets.all(0),
             indicator: RoundedRectangleTabIndicator(

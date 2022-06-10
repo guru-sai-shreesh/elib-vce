@@ -29,6 +29,7 @@ class _LibNewTabState extends State<LibNewTab> {
               children: [
                 Positioned(
                   child: Card(
+                    color: Color.fromARGB(234, 255, 255, 255),
                     elevation: 5,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
@@ -63,7 +64,7 @@ class _LibNewTabState extends State<LibNewTab> {
                                     height: 10,
                                   ),
                                   Text(
-                                    inNewTab[index]!.book_name,
+                                    inNewTab[index]?.book_name ?? "book_name",
                                     style: GoogleFonts.openSans(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w700,
@@ -73,7 +74,8 @@ class _LibNewTabState extends State<LibNewTab> {
                                     height: 3,
                                   ),
                                   Text(
-                                    inNewTab[index]!.author_name,
+                                    inNewTab[index]?.author_name ??
+                                        "author_name",
                                     style: GoogleFonts.openSans(
                                       fontSize: 10,
                                       fontWeight: FontWeight.w400,
@@ -147,7 +149,7 @@ class _LibNewTabState extends State<LibNewTab> {
                                 bottomLeft: Radius.circular(10)),
                             image: DecorationImage(
                               image: NetworkImage(
-                                  inNewTab[index]!.image_address ?? ""),
+                                  inNewTab[index]?.image_address ?? ""),
                               fit: BoxFit.fill,
                             )),
                       ),

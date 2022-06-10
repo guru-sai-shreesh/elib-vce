@@ -29,55 +29,72 @@ class _GradesState extends State<Grades> {
           Navigator.of(context).popUntil(ModalRoute.withName("/"));
           return false;
         },
-        child: Scaffold(
-            appBar: AppBar(
-              title: Text("E-VCE"),
-              elevation:
-                  defaultTargetPlatform == TargetPlatform.android ? 0.0 : 0.0,
-              backgroundColor: defaultTargetPlatform == TargetPlatform.android
-                  ? Colors.white
-                  : Colors.transparent,
-            ),
-            // appBar: AppBar(
-            //   title: Text("E-VCE"),
-            //   backgroundColor: Colors.transparent,
-            //   elevation: 0.0,
-            //   iconTheme: IconThemeData(color: Colors.black),
-            // ),
-            drawer: NavigationDrawer(),
-            body: ListView.builder(
-                itemCount: semList.length,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => ExamList())),
-                      );
-                    },
-                    child: Card(
-                        color: Color.fromARGB(255, 17, 149, 189),
-                        elevation: 5,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        margin: EdgeInsets.only(left: 25, right: 25, top: 10),
-                        child: Container(
-                          height: 60,
-                          padding: EdgeInsets.only(left: 25),
-                          child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Text(
-                                  semList[index],
-                                  style: GoogleFonts.openSans(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w700,
-                                  ),
-                                ),
-                              ]),
+        child: Container(
+          color: Color.fromARGB(255, 152, 209, 255),
+          child: Scaffold(
+              appBar: AppBar(
+                title: Text(
+                  "E-VCE",
+                  style: TextStyle(color: Colors.black87),
+                ),
+                backgroundColor: Colors.transparent,
+                elevation: 0,
+              ),
+              backgroundColor: Colors.transparent,
+              drawer: NavigationDrawer(),
+              body: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 10, left: 30),
+                    child: Text("Grades",
+                        style: GoogleFonts.openSans(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black87,
                         )),
-                  );
-                })));
+                  ),
+                  ListView.builder(
+                      itemCount: semList.length,
+                      shrinkWrap: true,
+                      physics: BouncingScrollPhysics(),
+                      itemBuilder: (context, index) {
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                  builder: ((context) => ExamList())),
+                            );
+                          },
+                          child: Card(
+                              color: Colors.white70,
+                              elevation: 5,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              margin:
+                                  EdgeInsets.only(left: 25, right: 25, top: 10),
+                              child: Container(
+                                height: 60,
+                                padding: EdgeInsets.only(left: 25),
+                                child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        semList[index],
+                                        style: GoogleFonts.openSans(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700,
+                                        ),
+                                      ),
+                                    ]),
+                              )),
+                        );
+                      }),
+                ],
+              )),
+        ));
   }
 }

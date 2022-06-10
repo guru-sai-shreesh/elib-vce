@@ -47,7 +47,7 @@ class _BooksIssuedState extends State<BooksIssued> {
                     ),
                     ListView.builder(
                         padding: EdgeInsets.only(top: 10, left: 15, right: 15),
-                        physics: NeverScrollableScrollPhysics(),
+                        physics: BouncingScrollPhysics(),
                         shrinkWrap: true,
                         itemCount: issuedBooks.length,
                         itemBuilder: (context, index) {

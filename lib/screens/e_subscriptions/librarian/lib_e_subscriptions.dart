@@ -37,7 +37,7 @@ class _LibESubscriptionsState extends State<LibESubscriptions>
         return false;
       },
       child: Container(
-        color: Color.fromARGB(255, 152, 209, 255),
+        color: Color.fromRGBO(43, 94, 148, 1),
         child: Scaffold(
           appBar: AppBar(
             title: Text(
@@ -73,7 +73,7 @@ class _LibESubscriptionsState extends State<LibESubscriptions>
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (((context) => AddSubscription()))));
             },
-            backgroundColor: Color.fromARGB(255, 17, 149, 189),
+            backgroundColor: Color.fromARGB(255, 68, 117, 169),
             elevation: 5,
             label: Text('Subscription',
                 style: GoogleFonts.openSans(
@@ -88,10 +88,10 @@ class _LibESubscriptionsState extends State<LibESubscriptions>
           ),
           body: Container(
             decoration: BoxDecoration(
-              color: Colors.white38,
-              borderRadius: BorderRadius.circular(10),
+              color: Colors.white70,
+              borderRadius: BorderRadius.circular(15),
             ),
-            margin: EdgeInsets.only(left: 25, right: 25, top: 10),
+            margin: EdgeInsets.only(left: 5, right: 5, top: 10),
             child: TabBarView(controller: _tabController, children: [
               CampusTab(),
               OffCampusTab(),

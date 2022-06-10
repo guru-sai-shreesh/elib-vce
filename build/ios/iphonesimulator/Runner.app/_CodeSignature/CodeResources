@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		ga0E2LH44J6uUTyXsY2Lc2rXv5k=
+		EhfkNAY+YTM83rSS7eOQA1jKFpY=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		mU04Jr+A7LjnKa7yXYwhz6EdjHs=
+		Ju/Ech+1E55TwGT/1Oz7hr+nQGg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		hFnh/tUeTvtrzjsRJNdRt+a1+44=
+		SLUNjAu0Ixx9taojP1pL9TuvHk4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -222,15 +222,15 @@
 		</data>
 		<key>Frameworks/flutter_barcode_scanner.framework/Info.plist</key>
 		<data>
-		kfTxtwvtb/lxsNOyK2Xeod10Lks=
+		S7/X4twCxfZsFOF1umxlP2K1xBw=
 		</data>
 		<key>Frameworks/flutter_barcode_scanner.framework/_CodeSignature/CodeResources</key>
 		<data>
-		2k19jPbyU6r3FvwBf3f1GH/ALHs=
+		vFcw/fJIlaCpmKxGCw7du5UIv0U=
 		</data>
 		<key>Frameworks/flutter_barcode_scanner.framework/flutter_barcode_scanner</key>
 		<data>
-		z+6BOEwHxzmQ7APtRVIRLySJDwc=
+		/o8aLWOjOcds2qbvaccJ3YDDYfI=
 		</data>
 		<key>Frameworks/flutter_barcode_scanner.framework/ic_flash_off.png</key>
 		<data>
@@ -246,19 +246,19 @@
 		</data>
 		<key>Frameworks/path_provider_ios.framework/Info.plist</key>
 		<data>
-		oqKkiDYtRPmBdze01085vrNYIm4=
+		qaUWCDZb6wwCcN9rvo/kU8MgNL4=
 		</data>
 		<key>Frameworks/path_provider_ios.framework/_CodeSignature/CodeResources</key>
 		<data>
-		n9eIugVN6vEn4bIb8Cu9Q4/2snE=
+		mM45FHQL25Z5BYaXvRi0kTOS584=
 		</data>
 		<key>Frameworks/path_provider_ios.framework/path_provider_ios</key>
 		<data>
-		CfMtEv1ePMq8AavxDglQSKe8otY=
+		mt84vGIx2xBukbqnrjR8iOGhETY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3SiG+ZMnK09V9FYsMR5xBXAxA7g=
+		kjdE/NK/T8cdPQnKu9w8wpzYeGY=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -341,7 +341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lEi/OU0thlk0lFWVwczsl+LcpRVtifi6QgQUwSj8rPI=
+			+4/DczXD1Xgfvx9yzpOEYTH2BxSMH4/oOcQIBInR2U4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -355,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vWmAPSf+BSqYh42LP02CqyuC9uzTJ8VgoFAQu1apZpg=
+			3+L9KMCLgrFi65DbclVtymaqEP+G/gLPsQQNf2JQdJ8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -481,7 +481,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iCIiNfJI70rWcx6BdImeV0bzsriK1RhSKJY6/MMBFj0=
+			IPMu9XNTipBnRS2ELFkfbfzYb1fjXueitNV83zohkRA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -649,21 +649,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LcMN9ebhyZuVPASIT+Hmu9P6sIyhygN1m5nwAa+7R9w=
+			SfI4baTe8MEBb8J4yOZr3e36ytFO6Ql2zT5iTJS5UyA=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_barcode_scanner.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NbNoHaALEneIVqy1z0NC+msp6CF0SABMMcaseo7xOfU=
+			6YKgfV0DmDHQ6QFOHxa8zJkX+jx/+K3+d6RkhhZHI4I=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_barcode_scanner.framework/flutter_barcode_scanner</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VvxAosIsjgzBK6FzQvzeHm/BGAIMGnr9VX21SnfxiBM=
+			VP4um17ADlGL0ioQTbWfVJEx7AYSfIlt3ZcZosKXZvE=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_barcode_scanner.framework/ic_flash_off.png</key>
@@ -691,21 +691,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LJ1Inx4mpt420CRggvtKRG2I36RQHVHHUReTCY2Em/I=
+			85KP8+uOb6DRAUbTT+jstXCmKkLTFjZ+cIHp+1dVPG8=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_ios.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zWHATywOqWA1BtbAw1DsGYrj2aOYKCC9UFcas7nI37w=
+			r5hQrmlFvafvvsVXIj9QsV8OhyBjHx1XfPPKavtu9cA=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_ios.framework/path_provider_ios</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ka41obHjRHnjCeDYJ9eJtI7eIdyFwiPV+5PqPOujZCw=
+			yGuEpX/2p6Y3m2js9dFKF2/1GjOo2W049m9zz9tFzJE=
 			</data>
 		</dict>
 	</dict>

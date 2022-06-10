@@ -94,7 +94,7 @@ class _LibSearchBookState extends State<LibSearchBook>
           return false;
         },
         child: Container(
-          color: Color.fromARGB(255, 152, 209, 255),
+          color: Color.fromRGBO(43, 94, 148, 1),
           child: Scaffold(
               appBar: AppBar(
                 title: Text(
@@ -107,7 +107,7 @@ class _LibSearchBookState extends State<LibSearchBook>
               backgroundColor: Colors.transparent,
               floatingActionButton: SpeedDial(
                   icon: Icons.add,
-                  backgroundColor: Color.fromARGB(255, 17, 149, 189),
+                  backgroundColor: Color.fromRGBO(43, 94, 148, 1),
                   overlayColor: Colors.black,
                   overlayOpacity: 0.4,
                   spaceBetweenChildren: 10,
@@ -148,7 +148,7 @@ class _LibSearchBookState extends State<LibSearchBook>
                       physics: BouncingScrollPhysics(),
                       children: <Widget>[
                         Padding(
-                            padding: EdgeInsets.only(left: 25, top: 25),
+                            padding: EdgeInsets.only(left: 25, top: 5),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
@@ -160,9 +160,9 @@ class _LibSearchBookState extends State<LibSearchBook>
                                     )),
                                 Text('Discover Book',
                                     style: GoogleFonts.openSans(
-                                      fontSize: 27,
+                                      fontSize: 25,
                                       fontWeight: FontWeight.w700,
-                                      color: Color.fromARGB(255, 32, 32, 32),
+                                      color: Color.fromARGB(247, 32, 32, 32),
                                     ))
                               ],
                             )),
@@ -219,10 +219,10 @@ class _LibSearchBookState extends State<LibSearchBook>
                             return Container(
                               height: 39,
                               margin:
-                                  EdgeInsets.only(left: 18, right: 25, top: 15),
+                                  EdgeInsets.only(left: 18, right: 25, top: 10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
-                                color: Colors.white54,
+                                color: Colors.white70,
                               ),
                               child: Stack(
                                 children: <Widget>[
@@ -239,7 +239,7 @@ class _LibSearchBookState extends State<LibSearchBook>
                                         hintText: 'Search book..',
                                         hintStyle: GoogleFonts.openSans(
                                           fontSize: 14,
-                                          color: Colors.grey,
+                                          color: Colors.black38,
                                           fontWeight: FontWeight.w600,
                                         )),
                                   ),
@@ -268,7 +268,7 @@ class _LibSearchBookState extends State<LibSearchBook>
                         Padding(padding: EdgeInsets.only(top: 15)),
                         Container(
                             decoration: BoxDecoration(
-                              color: Colors.white38,
+                              color: Colors.white70,
                               borderRadius: BorderRadius.circular(10),
                             ),
                             margin: EdgeInsets.only(right: 10, left: 10),
@@ -298,8 +298,8 @@ class _LibSearchBookState extends State<LibSearchBook>
                                     }),
                                     child: Container(
                                         height: 180,
-                                        width: 115,
-                                        margin: EdgeInsets.only(left: 14),
+                                        width: 122,
+                                        margin: EdgeInsets.only(left: 10),
                                         decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(10),
@@ -351,7 +351,7 @@ class _LibSearchBookState extends State<LibSearchBook>
                         Padding(padding: EdgeInsets.only(bottom: 10)),
                         Container(
                           decoration: BoxDecoration(
-                            color: Colors.white38,
+                            color: Colors.white70,
                             borderRadius: BorderRadius.circular(10),
                           ),
                           margin: EdgeInsets.only(left: 10, right: 10),

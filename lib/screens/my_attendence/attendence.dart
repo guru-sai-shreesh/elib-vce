@@ -42,8 +42,8 @@ class _AttendenceState extends State<Attendence> {
             ),
             margin: EdgeInsets.only(left: 25, right: 25, top: 10),
             color: isPresent[index]
-                ? Color.fromARGB(255, 150, 198, 213)
-                : Color.fromARGB(255, 17, 149, 189),
+                ? Color.fromARGB(255, 17, 157, 189)
+                : Colors.black26,
             child: Container(
               height: 60,
               padding: EdgeInsets.only(left: 25),
@@ -69,7 +69,7 @@ class _AttendenceState extends State<Attendence> {
                           style: GoogleFonts.openSans(
                             fontSize: 11,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white,
+                            color: Colors.black54,
                           ),
                         )
                       ]),
@@ -81,7 +81,7 @@ class _AttendenceState extends State<Attendence> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                            color: Colors.white,
+                            color: Colors.white70,
                           )),
                     ),
                   ),
