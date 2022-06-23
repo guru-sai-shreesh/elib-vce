@@ -1,3 +1,4 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -6,6 +7,20 @@ class Attendence extends StatefulWidget {
 
   @override
   State<Attendence> createState() => _AttendenceState();
+}
+
+class HexColor extends Color {
+  static int _getColorFromHex(String hexColor) {
+    hexColor = hexColor.toUpperCase().replaceAll("#", "");
+    if (hexColor.length == 6) {
+      hexColor = "FF" + hexColor;
+    }
+    return int.parse(hexColor, radix: 16);
+  }
+
+  HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
+
+  static fromHex(String s) {}
 }
 
 class _AttendenceState extends State<Attendence> {
@@ -40,13 +55,16 @@ class _AttendenceState extends State<Attendence> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-            margin: EdgeInsets.only(left: 25, right: 25, top: 10),
-            color: isPresent[index]
-                ? Color.fromARGB(255, 17, 157, 189)
-                : Colors.black26,
+            elevation: 0.1,
+            margin: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width * 0.025,
+                right: MediaQuery.of(context).size.width * 0.025,
+                top: 10),
+            color: isPresent[index] ? AppColors.primaryColor : Color(0xffFFFFF),
             child: Container(
-              height: 60,
-              padding: EdgeInsets.only(left: 25),
+              height: 52,
+              padding: EdgeInsets.only(
+                  left: MediaQuery.of(context).size.width * 0.035),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -74,13 +92,13 @@ class _AttendenceState extends State<Attendence> {
                         )
                       ]),
                   Container(
-                    width: MediaQuery.of(context).size.width - 200,
+                    width: MediaQuery.of(context).size.width * 0.50,
                     child: Align(
                       alignment: Alignment.centerRight,
                       child: Text("Date",
                           style: GoogleFonts.openSans(
                             fontSize: 14,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                             color: Colors.white70,
                           )),
                     ),

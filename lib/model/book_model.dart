@@ -12,10 +12,16 @@ class Book {
   late bool? isPhysicalBook;
   late bool? isEBook;
   late String isbn;
+  late String? edition;
+  late int? no_of_pages;
+  late List<String>? relavence;
   Book({
     required this.author_name,
     required this.book_name,
+    this.no_of_pages,
+    this.edition,
     this.description,
+    this.relavence,
     this.isPhysicalBook,
     this.isEBook,
     this.image_address,

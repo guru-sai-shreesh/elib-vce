@@ -1,7 +1,8 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/screens/e_subscriptions/campus_tab.dart';
 import 'package:e_vce/screens/e_subscriptions/librarian/lib_add_subscription.dart';
 import 'package:e_vce/screens/e_subscriptions/off_campus_tab.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/widget/custom_tab_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -37,24 +38,24 @@ class _LibESubscriptionsState extends State<LibESubscriptions>
         return false;
       },
       child: Container(
-        color: Color.fromRGBO(43, 94, 148, 1),
+        color: AppColors.primaryBackgroundColor,
         child: Scaffold(
           appBar: AppBar(
             title: Text(
               "E-VCE",
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: AppColors.appBarTitle),
             ),
             backgroundColor: Colors.transparent,
             elevation: 0,
             bottom: TabBar(
               controller: _tabController,
-              labelColor: Colors.black,
+              labelColor: AppColors.selectedIndicatorLabelColor,
               isScrollable: true,
-              unselectedLabelColor: Colors.white70,
+              unselectedLabelColor: AppColors.unselectedIndicatorLabelColor,
               labelPadding: EdgeInsets.all(0),
               indicatorPadding: EdgeInsets.all(0),
               indicator: RoundedRectangleTabIndicator(
-                  weight: 2, width: 10, color: Colors.black),
+                  weight: 2, width: 10, color: AppColors.IndicatorLineColor),
               labelStyle: GoogleFonts.openSans(
                 fontSize: 16,
                 fontWeight: FontWeight.w700,
@@ -73,7 +74,7 @@ class _LibESubscriptionsState extends State<LibESubscriptions>
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (((context) => AddSubscription()))));
             },
-            backgroundColor: Color.fromARGB(255, 68, 117, 169),
+            backgroundColor: AppColors.floatingActionButtonColor,
             elevation: 5,
             label: Text('Subscription',
                 style: GoogleFonts.openSans(

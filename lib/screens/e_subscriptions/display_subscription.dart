@@ -1,3 +1,4 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/subscription_model.dart';
 import 'package:e_vce/widget/custom_tab_indicator.dart';
 import 'package:flutter/foundation.dart';
@@ -49,11 +50,11 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
       bottomNavigationBar: Row(
         children: [
           Container(
-            margin: EdgeInsets.only(left: 25, bottom: 25),
-            height: 49,
+            margin: EdgeInsets.only(left: 25, bottom: 14),
+            height: 42,
             color: Colors.transparent,
             child: FlatButton(
-              color: Color.fromARGB(255, 17, 149, 189),
+              color: AppColors.primaryColor,
               onPressed: (() {
                 onTap:
                 setState(() {
@@ -77,11 +78,11 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
             ),
           ),
           Container(
-            margin: EdgeInsets.only(left: 10, right: 25, bottom: 25),
-            height: 49,
+            margin: EdgeInsets.only(left: 10, right: 25, bottom: 14),
+            height: 42,
             color: Colors.transparent,
             child: FlatButton(
-              color: Color.fromARGB(255, 17, 149, 189),
+              color: AppColors.primaryColor,
               onPressed: (() {
                 onTap:
                 setState(() {});
@@ -105,12 +106,14 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
           ),
         ],
       ),
-      body: SafeArea(
-          child: Container(
-        child: CustomScrollView(
+      body: Container(
+        color: AppColors.primaryBackgroundColor,
+        child: SafeArea(
+            child: CustomScrollView(
           slivers: [
             SliverAppBar(
-              backgroundColor: Color.fromARGB(121, 45, 109, 228),
+              iconTheme: IconThemeData(color: Colors.white),
+              backgroundColor: AppColors.primaryBackgroundColor,
               expandedHeight: MediaQuery.of(context).size.height * 0.35,
               flexibleSpace: Container(
                 height: MediaQuery.of(context).size.height * 0.35,
@@ -137,91 +140,100 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
             ),
             SliverList(
                 delegate: SliverChildListDelegate([
-              Padding(
-                padding: EdgeInsets.only(left: 25),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(top: 25),
-                          child: Text(
-                            popularSubscriptionModel.provider,
-                            style: GoogleFonts.openSans(
-                              fontSize: 27,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.black,
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10),
+                    )),
+                child: Padding(
+                  padding: EdgeInsets.only(left: 25),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(top: 25),
+                            child: Text(
+                              popularSubscriptionModel.provider,
+                              style: GoogleFonts.openSans(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.black,
+                              ),
                             ),
                           ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 7),
-                          child: Text(
-                            popularSubscriptionModel.subscription_name,
-                            style: GoogleFonts.openSans(
+                          Padding(
+                            padding: EdgeInsets.only(top: 7),
+                            child: Text(
+                              popularSubscriptionModel.subscription_name,
+                              style: GoogleFonts.openSans(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Padding(padding: EdgeInsets.only(top: 20)),
+                      Container(
+                        height: 25,
+                        margin: EdgeInsets.only(top: 5),
+                        child: DefaultTabController(
+                          length: myTabs.length,
+                          child: TabBar(
+                            controller: _tabController,
+                            labelPadding: EdgeInsets.all(0),
+                            indicatorPadding: EdgeInsets.all(0),
+                            isScrollable: true,
+                            labelColor: Colors.black,
+                            unselectedLabelColor: Colors.grey,
+                            labelStyle: GoogleFonts.openSans(
                               fontSize: 14,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.grey,
+                              fontWeight: FontWeight.w700,
                             ),
+                            indicator: RoundedRectangleTabIndicator(
+                                weight: 2, width: 10, color: Colors.black),
+                            unselectedLabelStyle: GoogleFonts.openSans(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            tabs: myTabs,
                           ),
-                        ),
-                      ],
-                    ),
-                    Padding(padding: EdgeInsets.only(top: 20)),
-                    Container(
-                      height: 25,
-                      margin: EdgeInsets.only(top: 5),
-                      child: DefaultTabController(
-                        length: myTabs.length,
-                        child: TabBar(
-                          controller: _tabController,
-                          labelPadding: EdgeInsets.all(0),
-                          indicatorPadding: EdgeInsets.all(0),
-                          isScrollable: true,
-                          labelColor: Colors.black,
-                          unselectedLabelColor: Colors.grey,
-                          labelStyle: GoogleFonts.openSans(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          indicator: RoundedRectangleTabIndicator(
-                              weight: 2, width: 10, color: Colors.black),
-                          unselectedLabelStyle: GoogleFonts.openSans(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                          ),
-                          tabs: myTabs,
                         ),
                       ),
-                    ),
-                    Container(
-                      width: double.maxFinite,
-                      height: 700,
-                      child: TabBarView(controller: _tabController, children: [
-                        Padding(
-                          padding: EdgeInsets.only(top: 25, right: 25),
-                          child: Text(popularSubscriptionModel.description ??
-                              "No Description"),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 25),
-                          child: Text('Relevenace and Credentials'),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 25),
-                          child: Text('Popular Publications'),
-                        ),
-                      ]),
-                    )
-                  ],
+                      Container(
+                        width: double.maxFinite,
+                        height: 700,
+                        child:
+                            TabBarView(controller: _tabController, children: [
+                          Padding(
+                            padding: EdgeInsets.only(top: 25, right: 25),
+                            child: Text(popularSubscriptionModel.description ??
+                                "No Description"),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 25),
+                            child: Text('Relevenace and Credentials'),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 25),
+                            child: Text('Popular Publications'),
+                          ),
+                        ]),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ]))
           ],
-        ),
-      )),
+        )),
+      ),
     );
   }
 }

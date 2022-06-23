@@ -14,94 +14,133 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->/Users/gurusaishreeshtirumalla/elib-vce/android/app/src/debug/AndroidManifest.xml:6:5-66
 14-->/Users/gurusaishreeshtirumalla/elib-vce/android/app/src/debug/AndroidManifest.xml:6:22-64
-15    <uses-permission android:name="android.permission.CAMERA" />
-15-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-65
-15-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-62
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 16
-17    <uses-feature android:name="android.hardware.camera" />
-17-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-60
-17-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:19-57
-18
-19    <uses-permission android:name="android.permission.FLASHLIGHT" />
-19-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-69
-19-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-66
+17    <queries>
+17-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:15
+18        <intent>
+18-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:18
+19            <action android:name="android.intent.action.GET_CONTENT" />
+19-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-72
+19-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:21-69
 20
-21    <application
-22        android:name="android.app.Application"
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.6.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/AndroidManifest.xml:24:18-86
-24        android:debuggable="true"
-25        android:icon="@mipmap/ic_launcher"
-26        android:label="e_vce"
-27        android:largeHeap="true"
-27-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-33
-28        android:theme="@style/Theme.AppCompat.NoActionBar" >
-28-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-59
-29        <activity
-30            android:name="com.example.e_vce.MainActivity"
-31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-32            android:exported="true"
-33            android:hardwareAccelerated="true"
-34            android:launchMode="singleTop"
-35            android:theme="@style/LaunchTheme"
-36            android:windowSoftInputMode="adjustResize" >
-37
-38            <!--
-39                 Specifies an Android theme to apply to this Activity as soon as
-40                 the Android process has started. This theme is visible to the user
-41                 while the Flutter UI initializes. After that, this theme continues
-42                 to determine the Window background behind the Flutter UI.
-43            -->
-44            <meta-data
-45                android:name="io.flutter.embedding.android.NormalTheme"
-46                android:resource="@style/NormalTheme" />
-47
-48            <intent-filter>
-49                <action android:name="android.intent.action.MAIN" />
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-52            </intent-filter>
-53        </activity>
-54        <!--
-55             Don't delete the meta-data below.
-56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-57        -->
-58        <meta-data
-59            android:name="flutterEmbedding"
-60            android:value="2" />
+21            <data android:mimeType="*/*" />
+21-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
+21-->[:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-41
+22        </intent>
+23    </queries>
+24
+25    <uses-permission android:name="android.permission.CAMERA" />
+25-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-65
+25-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-62
+26
+27    <uses-feature android:name="android.hardware.camera" />
+27-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-60
+27-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:19-57
+28
+29    <uses-permission android:name="android.permission.FLASHLIGHT" />
+29-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-69
+29-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-66
+30    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+30-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+30-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+31
+32    <application
+33        android:name="android.app.Application"
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.6.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+37        android:label="e_vce"
+38        android:largeHeap="true"
+38-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-33
+39        android:theme="@style/Theme.AppCompat.NoActionBar" >
+39-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-59
+40        <activity
+41            android:name="com.example.e_vce.MainActivity"
+42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43            android:exported="true"
+44            android:hardwareAccelerated="true"
+45            android:launchMode="singleTop"
+46            android:theme="@style/LaunchTheme"
+47            android:windowSoftInputMode="adjustResize" >
+48
+49            <!--
+50                 Specifies an Android theme to apply to this Activity as soon as
+51                 the Android process has started. This theme is visible to the user
+52                 while the Flutter UI initializes. After that, this theme continues
+53                 to determine the Window background behind the Flutter UI.
+54            -->
+55            <meta-data
+56                android:name="io.flutter.embedding.android.NormalTheme"
+57                android:resource="@style/NormalTheme" />
+58
+59            <intent-filter>
+60                <action android:name="android.intent.action.MAIN" />
 61
-62        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
-62-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-91
-62-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:19-88
-63
-64        <uses-library
-64-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-65            android:name="androidx.window.extensions"
-65-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-66            android:required="false" />
-66-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-67        <uses-library
-67-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-68            android:name="androidx.window.sidecar"
-68-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-69            android:required="false" />
-69-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-70
-71        <activity
-71-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:23:9-26:75
-72            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-72-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:24:13-79
-73            android:exported="false"
-73-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:25:13-37
-74            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-74-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:26:13-72
-75
-76        <meta-data
-76-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:23:9-25:69
-77            android:name="com.google.android.gms.version"
-77-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:24:13-58
-78            android:value="@integer/google_play_services_version" />
-78-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:25:13-66
-79    </application>
-80
-81</manifest>
+62                <category android:name="android.intent.category.LAUNCHER" />
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+70            android:name="flutterEmbedding"
+71            android:value="2" />
+72
+73        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+73-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-91
+73-->[:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:19-88
+74
+75        <provider
+75-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+76            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+76-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+77            android:authorities="com.example.e_vce.flutter.image_provider"
+77-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+78            android:exported="false"
+78-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+79            android:grantUriPermissions="true" >
+79-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+80            <meta-data
+80-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+82                android:resource="@xml/flutter_image_picker_file_paths" />
+82-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+83        </provider>
+84
+85        <uses-library
+85-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+86            android:name="androidx.window.extensions"
+86-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+87            android:required="false" />
+87-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+89            android:name="androidx.window.sidecar"
+89-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+91
+92        <activity
+92-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:23:9-26:75
+93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+93-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:24:13-79
+94            android:exported="false"
+94-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:25:13-37
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+95-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:26:13-72
+96
+97        <meta-data
+97-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:23:9-25:69
+98            android:name="com.google.android.gms.version"
+98-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:24:13-58
+99            android:value="@integer/google_play_services_version" />
+99-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:25:13-66
+100    </application>
+101
+102</manifest>

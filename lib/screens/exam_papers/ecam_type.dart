@@ -1,3 +1,4 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/screens/exam_papers/papers_display.dart';
 import 'package:e_vce/screens/grades/diaplay_grade.dart';
 import 'package:flutter/foundation.dart';
@@ -20,7 +21,7 @@ class _ExamTypeState extends State<ExamType> {
       'Sem',
     ];
     return Container(
-      color: Color.fromARGB(255, 152, 209, 255),
+      color: AppColors.primaryBackgroundColor,
       child: Scaffold(
           appBar: AppBar(
             title: Text("E-VCE"),

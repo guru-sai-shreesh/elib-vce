@@ -1,4 +1,5 @@
 import 'package:e_vce/model/book_model.dart';
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/personal_data.dart';
 import 'package:e_vce/model/fetchtop10.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class _LibNewTabState extends State<LibNewTab> {
               children: [
                 Positioned(
                   child: Card(
-                    color: Color.fromARGB(234, 255, 255, 255),
+                    color: AppColors.searchBookCardColor,
                     elevation: 5,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),

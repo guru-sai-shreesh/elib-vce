@@ -1,6 +1,7 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/screens/my_attendence/attendence.dart';
 import 'package:e_vce/screens/my_attendence/attendence_percentage.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/widget/custom_tab_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -37,7 +38,7 @@ class _MyAttendenceState extends State<MyAttendence>
           return false;
         },
         child: Container(
-          color: Color.fromARGB(255, 152, 209, 255),
+          color: AppColors.primaryBackgroundColor,
           child: Scaffold(
             appBar: AppBar(
               title: Text("E-VCE"),
@@ -72,10 +73,17 @@ class _MyAttendenceState extends State<MyAttendence>
             // ),
             backgroundColor: Colors.transparent,
             drawer: NavigationDrawer(),
-            body: TabBarView(controller: _tabController, children: [
-              Attendence(),
-              AttendencePercentage(),
-            ]),
+            body: Container(
+              decoration: BoxDecoration(
+                color: AppColors.layerColor,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              margin: EdgeInsets.only(left: 10, right: 10),
+              child: TabBarView(controller: _tabController, children: [
+                Attendence(),
+                AttendencePercentage(),
+              ]),
+            ),
           ),
         ));
   }

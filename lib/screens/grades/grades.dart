@@ -1,9 +1,9 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/screens/grades/exam_list.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../navigation_drawer.dart';
 
 class Grades extends StatefulWidget {
   @override
@@ -30,12 +30,12 @@ class _GradesState extends State<Grades> {
           return false;
         },
         child: Container(
-          color: Color.fromARGB(255, 152, 209, 255),
+          color: AppColors.primaryBackgroundColor,
           child: Scaffold(
               appBar: AppBar(
                 title: Text(
                   "E-VCE",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(color: AppColors.appBarTitle),
                 ),
                 backgroundColor: Colors.transparent,
                 elevation: 0,
@@ -51,7 +51,7 @@ class _GradesState extends State<Grades> {
                         style: GoogleFonts.openSans(
                           fontSize: 30,
                           fontWeight: FontWeight.w700,
-                          color: Colors.black87,
+                          color: Colors.white,
                         )),
                   ),
                   ListView.builder(

@@ -1,3 +1,4 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/subscription_model.dart';
 import 'package:e_vce/model/subscritions_list.dart';
 import 'package:e_vce/screens/e_subscriptions/display_subscription.dart';
@@ -21,7 +22,7 @@ class _OffCampusTabState extends State<OffCampusTab> {
         itemCount: offCampusSubsList.length,
         itemBuilder: (context, index) {
           return Card(
-            color: Color.fromARGB(255, 68, 117, 169),
+            color: AppColors.primaryColor,
             elevation: 10,
             margin: EdgeInsets.only(bottom: 10),
             shape: RoundedRectangleBorder(
@@ -133,7 +134,7 @@ class _OffCampusTabState extends State<OffCampusTab> {
                         style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w700,
-                            color: Color.fromARGB(179, 0, 0, 0)),
+                            color: AppColors.ButtonTextColor),
                       ),
                     ),
                   ),

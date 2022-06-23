@@ -1,10 +1,11 @@
 import 'dart:convert';
 
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/fetchtop10.dart';
 import 'package:e_vce/model/project_model.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/screens/projects/display_project.dart';
 import 'package:e_vce/screens/items_list.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
 import 'package:e_vce/screens/projects/add_project.dart';
 import 'package:e_vce/screens/projects/new_project_tab.dart';
 import 'package:e_vce/screens/projects/trending_project_tab.dart';
@@ -76,12 +77,12 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
           return false;
         },
         child: Container(
-          color: Color.fromARGB(255, 152, 209, 255),
+          color: AppColors.primaryBackgroundColor,
           child: Scaffold(
               appBar: AppBar(
                 title: Text(
                   "E-VCE",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(color: AppColors.appBarTitle),
                 ),
                 backgroundColor: Colors.transparent,
                 elevation: 0,
@@ -92,7 +93,7 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (((context) => AddProject()))));
                 },
-                backgroundColor: Color.fromARGB(255, 17, 149, 189),
+                backgroundColor: AppColors.floatingActionButtonColor,
                 elevation: 5,
                 label: Text('Add Project',
                     style: GoogleFonts.openSans(
@@ -123,13 +124,13 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                                     style: GoogleFonts.openSans(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w700,
-                                      color: Colors.black54,
+                                      color: Colors.white60,
                                     )),
                                 Text('Discover Projects',
                                     style: GoogleFonts.openSans(
                                       fontSize: 27,
                                       fontWeight: FontWeight.w700,
-                                      color: Color.fromARGB(255, 32, 32, 32),
+                                      color: Color.fromARGB(235, 255, 255, 255),
                                     ))
                               ],
                             )),
@@ -189,7 +190,7 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                                   EdgeInsets.only(left: 18, right: 25, top: 15),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
-                                color: Colors.white54,
+                                color: Colors.white70,
                               ),
                               child: Stack(
                                 children: <Widget>[
@@ -206,7 +207,7 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                                         hintText: 'Search project..',
                                         hintStyle: GoogleFonts.openSans(
                                           fontSize: 14,
-                                          color: Colors.grey,
+                                          color: Colors.black38,
                                           fontWeight: FontWeight.w600,
                                         )),
                                   ),
@@ -235,7 +236,7 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                         Padding(padding: EdgeInsets.only(top: 15)),
                         Container(
                             decoration: BoxDecoration(
-                              color: Colors.white38,
+                              color: AppColors.layerColor,
                               borderRadius: BorderRadius.circular(10),
                             ),
                             margin: EdgeInsets.only(right: 10, left: 10),
@@ -285,7 +286,7 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                               style: GoogleFonts.openSans(
                                 fontSize: 22,
                                 fontWeight: FontWeight.w700,
-                                color: Color.fromARGB(255, 32, 32, 32),
+                                color: Color.fromARGB(235, 255, 255, 255),
                               )),
                         ),
                         Container(
@@ -299,14 +300,17 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                               labelPadding: EdgeInsets.all(0),
                               indicatorPadding: EdgeInsets.all(0),
                               isScrollable: true,
-                              labelColor: Colors.black,
-                              unselectedLabelColor: Colors.white70,
+                              labelColor: AppColors.selectedIndicatorLabelColor,
+                              unselectedLabelColor:
+                                  AppColors.unselectedIndicatorLabelColor,
                               labelStyle: GoogleFonts.openSans(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w700,
                               ),
                               indicator: RoundedRectangleTabIndicator(
-                                  weight: 2, width: 10, color: Colors.black),
+                                  weight: 2,
+                                  width: 10,
+                                  color: AppColors.IndicatorLineColor),
                               unselectedLabelStyle: GoogleFonts.openSans(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600,
@@ -318,7 +322,7 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                         Padding(padding: EdgeInsets.only(bottom: 10)),
                         Container(
                           decoration: BoxDecoration(
-                            color: Colors.white38,
+                            color: AppColors.layerColor,
                             borderRadius: BorderRadius.circular(10),
                           ),
                           margin: EdgeInsets.only(left: 10, right: 10),

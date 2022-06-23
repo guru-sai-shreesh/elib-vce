@@ -3,6 +3,8 @@ application
 INJECTED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/AndroidManifest.xml:3:4-33:19
 MERGED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-19:19
 MERGED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.3.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/10e7f3a503a836e488d37aa6e59752bb/material-1.3.0/AndroidManifest.xml:22:5-20
@@ -41,8 +43,10 @@ INJECTED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/Andro
 INJECTED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/AndroidManifest.xml:1:1-34:12
 INJECTED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/AndroidManifest.xml:1:1-34:12
 MERGED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:flutter_plugin_android_lifecycle] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
 MERGED from [:path_provider_android] /Users/gurusaishreeshtirumalla/elib-vce/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a35e7deafbbca66133ce715fee63e7b5/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/0a729947d9f2682586d5957414cbefca/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
@@ -116,10 +120,14 @@ uses-sdk
 INJECTED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/main/AndroidManifest.xml
+MERGED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/gurusaishreeshtirumalla/elib-vce/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/gurusaishreeshtirumalla/elib-vce/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a35e7deafbbca66133ce715fee63e7b5/multidex-2.0.0/AndroidManifest.xml:20:5-43
@@ -236,6 +244,24 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/debug/AndroidManifest.xml:6:5-66
 	android:name
 		ADDED from /Users/gurusaishreeshtirumalla/elib-vce/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+MERGED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+MERGED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+queries
+ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:15
+intent#action:name:android.intent.action.GET_CONTENT+data:mimeType:*/*
+ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:18
+action#android.intent.action.GET_CONTENT
+ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-72
+	android:name
+		ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:21-69
+data
+ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
+	android:mimeType
+		ADDED from [:file_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-41
 uses-permission#android.permission.CAMERA
 ADDED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-65
 	android:name
@@ -252,6 +278,26 @@ activity#com.amolg.flutterbarcodescanner.BarcodeCaptureActivity
 ADDED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-91
 	android:name
 		ADDED from [:flutter_barcode_scanner] /Users/gurusaishreeshtirumalla/elib-vce/build/flutter_barcode_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:18:19-88
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+	android:authorities
+		ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+	android:exported
+		ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+	android:resource
+		ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+	android:name
+		ADDED from [:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required

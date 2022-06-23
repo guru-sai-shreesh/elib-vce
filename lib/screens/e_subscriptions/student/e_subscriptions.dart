@@ -1,6 +1,6 @@
 import 'package:e_vce/screens/e_subscriptions/campus_tab.dart';
 import 'package:e_vce/screens/e_subscriptions/off_campus_tab.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/widget/custom_tab_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';

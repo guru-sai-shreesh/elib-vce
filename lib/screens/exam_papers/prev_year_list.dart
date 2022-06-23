@@ -1,6 +1,6 @@
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/screens/exam_papers/add_year.dart';
 import 'package:e_vce/screens/exam_papers/ecam_type.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,7 +21,7 @@ class _PrevYearListState extends State<PrevYearList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromARGB(255, 152, 209, 255),
+      color: AppColors.primaryBackgroundColor,
       child: Scaffold(
           appBar: AppBar(
             title: Text("E-VCE"),
@@ -35,7 +35,7 @@ class _PrevYearListState extends State<PrevYearList> {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (((context) => AddYear()))));
             },
-            backgroundColor: Color.fromARGB(255, 17, 149, 189),
+            backgroundColor: AppColors.floatingActionButtonColor,
             elevation: 5,
             label: Text('New Year',
                 style: GoogleFonts.openSans(

@@ -41,6 +41,11 @@ dependencies:
   substring_highlight: ^1.0.33
   flutter_barcode_scanner: ^2.0.0
   flutter_speed_dial: ^6.0.0
+  image_picker: ^0.6.2+3
+  file_picker: ^3.0.4
+  dio: ^3.0.10
+  shared_preferences: ^2.0.15
+  flutter_secure_storage: ^5.0.2
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +73,7 @@ flutter:
   assets:
     - assets/data.json
     - assets/images/profile.jpg
+    - assets/images/clg_logo.png
     - assets/images/Icon.png
     - assets/images/login.png
     - assets/images/dash_background.png

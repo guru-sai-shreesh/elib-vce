@@ -1,5 +1,5 @@
-import 'package:e_vce/screens/homescreen.dart';
-import 'package:e_vce/screens/login_screen.dart';
+import 'package:e_vce/screens/dashboard/homescreen.dart';
+import 'package:e_vce/screens/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() async {

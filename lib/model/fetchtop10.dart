@@ -1,9 +1,9 @@
 import 'package:e_vce/model/book_model.dart';
 import 'package:e_vce/model/project_model.dart';
 
-late List<Book?> scrollDisplay;
-late List<Book?> inNewTab;
-late List<Book?> inTrendingTab;
+late List<Book?> scrollDisplay = [];
+late List<Book?> inNewTab = [];
+late List<Book?> inTrendingTab = [];
 late List<Project?> ProjectscrollDisplay = [
   Project(
       student_name: "guru sai shreesh",

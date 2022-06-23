@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:e_vce/model/personal_data.dart';
 import 'package:flutter/foundation.dart';
@@ -6,7 +7,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:file_picker/file_picker.dart';
+
 // import 'package:substring_highlight/substring_highlight.dart';
+
+File file = File("your initial file");
 
 class AddSubscription extends StatefulWidget {
   const AddSubscription({Key? key}) : super(key: key);
@@ -178,23 +183,28 @@ class _AddSubscriptionState extends State<AddSubscription> {
                         ),
                       ),
                       Padding(padding: EdgeInsets.only(top: 10)),
-                      TextField(
-                        controller: credentials_controller,
-                        decoration: InputDecoration(
-                          label: Text("Credentials"),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            borderSide: BorderSide(color: Colors.grey[300]!),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            borderSide: BorderSide(color: Colors.blue),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            borderSide: BorderSide(color: Colors.grey[300]!),
-                          ),
-                          hintText: "Enter Credentials",
+                      FlatButton(
+                        color: Color.fromARGB(255, 19, 136, 171),
+                        onPressed: (() async {
+                          FilePickerResult? result =
+                              await FilePicker.platform.pickFiles();
+
+                          if (result != null) {
+                            file = File(result.files.single.path ?? "");
+                          } else {
+                            // User canceled the picker
+                          }
+                        }),
+                        height: 40,
+                        minWidth: 100,
+                        child: Text("Upload Credentials Excel",
+                            style: GoogleFonts.openSans(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black,
+                            )),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
                         ),
                       ),
                       Padding(padding: EdgeInsets.only(top: 10)),

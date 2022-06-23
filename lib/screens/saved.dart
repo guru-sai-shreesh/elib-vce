@@ -1,6 +1,7 @@
 import 'package:e_vce/model/book_model.dart';
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/personal_data.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/screens/search_book/librarian/lib_display_book.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -20,17 +21,13 @@ class _SavedState extends State<Saved> {
         return false;
       },
       child: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('assets/images/dash_background_dark.png'),
-              fit: BoxFit.cover),
-        ),
+        color: AppColors.primaryColor,
         child: Scaffold(
             appBar: AppBar(
               iconTheme: IconThemeData(color: Colors.white),
               title: Text(
                 "E-VCE",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: AppColors.appBarTitle),
               ),
               backgroundColor: Colors.transparent,
               elevation: 0,

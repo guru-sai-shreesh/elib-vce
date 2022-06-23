@@ -1,7 +1,9 @@
 import 'dart:convert';
 
 import 'package:e_vce/model/book_model.dart';
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/fetchtop10.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/screens/search_book/librarian/add_book/enter_isbn.dart';
 import 'package:e_vce/screens/search_book/librarian/add_book/item_issue.dart';
 import 'package:e_vce/screens/search_book/librarian/add_book/return_book.dart';
@@ -9,20 +11,14 @@ import 'package:e_vce/screens/search_book/librarian/lib_display_book.dart';
 import 'package:e_vce/screens/search_book/librarian/lib_new_tab/lib_new_tab.dart';
 import 'package:e_vce/screens/search_book/librarian/lib_trending_tab/lib_trending_tab.dart';
 import 'package:e_vce/screens/search_book/librarian/lib_recomendation/lib_recomendation_tab.dart';
-import 'package:e_vce/screens/search_book/student/display_book.dart';
 import 'package:e_vce/screens/items_list.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
-import 'package:e_vce/screens/search_book/librarian/add_book/add_book.dart';
-import 'package:e_vce/screens/search_book/student/new_tab.dart';
-import 'package:e_vce/screens/search_book/student/trending_tab.dart';
 import 'package:e_vce/widget/custom_tab_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/svg.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:google_fonts/google_fonts.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
-import 'package:provider/provider.dart';
 import 'package:substring_highlight/substring_highlight.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
@@ -94,12 +90,12 @@ class _LibSearchBookState extends State<LibSearchBook>
           return false;
         },
         child: Container(
-          color: Color.fromRGBO(43, 94, 148, 1),
+          color: AppColors.primaryBackgroundColor,
           child: Scaffold(
               appBar: AppBar(
                 title: Text(
                   "E-VCE",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(color: AppColors.appBarTitle),
                 ),
                 backgroundColor: Colors.transparent,
                 elevation: 0,
@@ -107,7 +103,7 @@ class _LibSearchBookState extends State<LibSearchBook>
               backgroundColor: Colors.transparent,
               floatingActionButton: SpeedDial(
                   icon: Icons.add,
-                  backgroundColor: Color.fromRGBO(43, 94, 148, 1),
+                  backgroundColor: AppColors.floatingActionButtonColor,
                   overlayColor: Colors.black,
                   overlayOpacity: 0.4,
                   spaceBetweenChildren: 10,
@@ -156,13 +152,13 @@ class _LibSearchBookState extends State<LibSearchBook>
                                     style: GoogleFonts.openSans(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w700,
-                                      color: Colors.black54,
+                                      color: Colors.white60,
                                     )),
                                 Text('Discover Book',
                                     style: GoogleFonts.openSans(
                                       fontSize: 25,
                                       fontWeight: FontWeight.w700,
-                                      color: Color.fromARGB(247, 32, 32, 32),
+                                      color: Color.fromARGB(235, 255, 255, 255),
                                     ))
                               ],
                             )),
@@ -268,7 +264,7 @@ class _LibSearchBookState extends State<LibSearchBook>
                         Padding(padding: EdgeInsets.only(top: 15)),
                         Container(
                             decoration: BoxDecoration(
-                              color: Colors.white70,
+                              color: AppColors.layerColor,
                               borderRadius: BorderRadius.circular(10),
                             ),
                             margin: EdgeInsets.only(right: 10, left: 10),
@@ -318,7 +314,7 @@ class _LibSearchBookState extends State<LibSearchBook>
                               style: GoogleFonts.openSans(
                                 fontSize: 22,
                                 fontWeight: FontWeight.w700,
-                                color: Color.fromARGB(255, 32, 32, 32),
+                                color: Color.fromARGB(235, 255, 255, 255),
                               )),
                         ),
                         Container(
@@ -332,14 +328,17 @@ class _LibSearchBookState extends State<LibSearchBook>
                               labelPadding: EdgeInsets.all(0),
                               indicatorPadding: EdgeInsets.all(0),
                               isScrollable: true,
-                              labelColor: Colors.black,
-                              unselectedLabelColor: Colors.white70,
+                              labelColor: AppColors.selectedIndicatorLabelColor,
+                              unselectedLabelColor:
+                                  AppColors.unselectedIndicatorLabelColor,
                               labelStyle: GoogleFonts.openSans(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w700,
                               ),
                               indicator: RoundedRectangleTabIndicator(
-                                  weight: 2, width: 10, color: Colors.black),
+                                  weight: 2,
+                                  width: 10,
+                                  color: AppColors.IndicatorLineColor),
                               unselectedLabelStyle: GoogleFonts.openSans(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600,
@@ -351,7 +350,7 @@ class _LibSearchBookState extends State<LibSearchBook>
                         Padding(padding: EdgeInsets.only(bottom: 10)),
                         Container(
                           decoration: BoxDecoration(
-                            color: Colors.white70,
+                            color: AppColors.layerColor,
                             borderRadius: BorderRadius.circular(10),
                           ),
                           margin: EdgeInsets.only(left: 10, right: 10),

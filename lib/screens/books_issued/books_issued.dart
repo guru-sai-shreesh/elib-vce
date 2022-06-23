@@ -1,7 +1,8 @@
 import 'package:e_vce/model/book_model.dart';
+import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/fetchtop10.dart';
 import 'package:e_vce/model/personal_data.dart';
-import 'package:e_vce/screens/navigation_drawer.dart';
+import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/screens/search_book/librarian/lib_display_book.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,12 +18,12 @@ class _BooksIssuedState extends State<BooksIssued> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromARGB(255, 152, 209, 255),
+      color: AppColors.primaryBackgroundColor,
       child: Scaffold(
         appBar: AppBar(
           title: Text(
             "E-VCE",
-            style: TextStyle(color: Colors.black87),
+            style: TextStyle(color: AppColors.appBarTitle),
           ),
           backgroundColor: Colors.transparent,
           elevation: 0,
@@ -42,7 +43,7 @@ class _BooksIssuedState extends State<BooksIssued> {
                           style: GoogleFonts.openSans(
                             fontSize: 30,
                             fontWeight: FontWeight.w700,
-                            color: Colors.black87,
+                            color: Colors.white,
                           )),
                     ),
                     ListView.builder(
@@ -58,6 +59,7 @@ class _BooksIssuedState extends State<BooksIssued> {
                               children: [
                                 Positioned(
                                   child: Card(
+                                    color: AppColors.bookIssuedCardColor,
                                     elevation: 5,
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
