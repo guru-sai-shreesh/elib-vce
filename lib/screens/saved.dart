@@ -2,7 +2,7 @@ import 'package:e_vce/model/book_model.dart';
 import 'package:e_vce/model/colors.dart';
 import 'package:e_vce/model/personal_data.dart';
 import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
-import 'package:e_vce/screens/search_book/librarian/lib_display_book.dart';
+import 'package:e_vce/screens/search_book/display_book.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -74,8 +74,7 @@ class _SavedState extends State<Saved> {
                                         onTap: (() {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
-                                            builder: ((context) =>
-                                                LibDisplayBook(
+                                            builder: ((context) => DisplayBook(
                                                   popularBookModel:
                                                       saved_books![index],
                                                 )),
@@ -152,7 +151,7 @@ class _SavedState extends State<Saved> {
                                 onTap: (() {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                        builder: ((context) => LibDisplayBook(
+                                        builder: ((context) => DisplayBook(
                                               popularBookModel:
                                                   saved_books![index],
                                             ))),

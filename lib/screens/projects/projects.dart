@@ -6,7 +6,6 @@ import 'package:e_vce/model/project_model.dart';
 import 'package:e_vce/screens/navigation_drawers/navigation_drawer.dart';
 import 'package:e_vce/screens/projects/display_project.dart';
 import 'package:e_vce/screens/items_list.dart';
-import 'package:e_vce/screens/projects/add_project.dart';
 import 'package:e_vce/screens/projects/new_project_tab.dart';
 import 'package:e_vce/screens/projects/trending_project_tab.dart';
 import 'package:e_vce/widget/custom_tab_indicator.dart';
@@ -88,24 +87,6 @@ class _ProjectsState extends State<Projects> with TickerProviderStateMixin {
                 elevation: 0,
               ),
               backgroundColor: Colors.transparent,
-              floatingActionButton: FloatingActionButton.extended(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (((context) => AddProject()))));
-                },
-                backgroundColor: AppColors.floatingActionButtonColor,
-                elevation: 5,
-                label: Text('Add Project',
-                    style: GoogleFonts.openSans(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    )),
-                icon: const Icon(
-                  Icons.add,
-                  color: Colors.white,
-                ),
-              ),
               drawer: NavigationDrawer(),
               body: FutureBuilder(
                 future: fetchTop10(),

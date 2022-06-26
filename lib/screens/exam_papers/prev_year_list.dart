@@ -1,5 +1,4 @@
 import 'package:e_vce/model/colors.dart';
-import 'package:e_vce/screens/exam_papers/add_year.dart';
 import 'package:e_vce/screens/exam_papers/ecam_type.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -30,24 +29,6 @@ class _PrevYearListState extends State<PrevYearList> {
             backgroundColor: Colors.transparent,
           ),
           backgroundColor: Colors.transparent,
-          floatingActionButton: FloatingActionButton.extended(
-            onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (((context) => AddYear()))));
-            },
-            backgroundColor: AppColors.floatingActionButtonColor,
-            elevation: 5,
-            label: Text('New Year',
-                style: GoogleFonts.openSans(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.white,
-                )),
-            icon: const Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
           body: ListView.builder(
               itemCount: prevSemList.length,
               itemBuilder: (context, index) {

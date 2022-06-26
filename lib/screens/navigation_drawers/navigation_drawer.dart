@@ -3,7 +3,7 @@ import 'package:e_vce/model/fetchtop10.dart';
 import 'package:e_vce/screens/auth_screens/login_screen.dart';
 import 'package:e_vce/screens/books_issued/books_issued.dart';
 import 'package:e_vce/screens/dashboard/homescreen.dart';
-import 'package:e_vce/screens/e_subscriptions/librarian/lib_e_subscriptions.dart';
+import 'package:e_vce/screens/e_subscriptions/e_subscriptions.dart';
 import 'package:e_vce/screens/exam_papers/exam_parers.dart';
 import 'package:e_vce/screens/grades/grades.dart';
 import 'package:e_vce/screens/liked.dart';
@@ -12,8 +12,7 @@ import 'package:e_vce/screens/projects/projects.dart';
 import 'package:e_vce/screens/resources.dart';
 import 'package:e_vce/screens/saved.dart';
 import 'package:e_vce/screens/schedule.dart';
-import 'package:e_vce/screens/search_book/librarian/lib_search_book.dart';
-import 'package:e_vce/screens/search_book/student/search_book.dart';
+import 'package:e_vce/screens/search_book/search_book.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatefulWidget {
@@ -57,7 +56,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   settings: RouteSettings(name: "/e_subscriptions"),
-                  builder: (context) => LibESubscriptions(),
+                  builder: (context) => ESubscriptions(),
                 ),
               )
             },
@@ -70,7 +69,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   settings: RouteSettings(name: "/search_book"),
-                  builder: (context) => LibSearchBook(),
+                  builder: (context) => SearchBook(),
                 ),
               )
             },

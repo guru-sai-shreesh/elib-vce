@@ -253,6 +253,8 @@ com/google/common/collect/GwtTransient.class
 com/google/common/eventbus/AllowConcurrentEvents.class
 com/google/common/eventbus/Subscribe.class
 com/google/common/util/concurrent/Partially$GwtIncompatible.class
+com/google/crypto/tink/annotations/Alpha.class
+com/google/crypto/tink/shaded/protobuf/ExperimentalApi.class
 com/google/errorprone/annotations/CanIgnoreReturnValue.class
 com/google/errorprone/annotations/CheckReturnValue.class
 com/google/errorprone/annotations/CompatibleWith.class

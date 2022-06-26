@@ -1,9 +1,15 @@
 import 'package:e_vce/screens/dashboard/homescreen.dart';
 import 'package:e_vce/screens/auth_screens/login_screen.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
   runApp(const MyApp());
+}
+
+bool isLogedIn() {
+  bool logged = true;
+  return logged;
 }
 
 class MyApp extends StatelessWidget {
@@ -17,6 +23,6 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.grey[50],
           // scaffoldBackgroundColor: Colors.cyan[100],
         ),
-        home: LoginScreen());
+        home: isLogedIn() ? LoginScreen() : HomeScreen());
   }
 }
