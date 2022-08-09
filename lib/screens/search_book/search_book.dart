@@ -101,7 +101,7 @@ class _SearchBookState extends State<SearchBook> with TickerProviderStateMixin {
                     position: BadgePosition.topEnd(top: 3, end: 18),
                     animationDuration: Duration(milliseconds: 300),
                     animationType: BadgeAnimationType.slide,
-                    badgeColor: Colors.white54,
+                    badgeColor: AppColors.badgecolor,
                     badgeContent: Text(
                       (general_issue_cart!.length + bookbank_issue_cart!.length)
                           .toString(),

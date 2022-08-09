@@ -63,7 +63,8 @@ class _GradesState extends State<Grades> {
                           onTap: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                  builder: ((context) => ExamList())),
+                                  builder: ((context) =>
+                                      ExamList(sem: semList[index]))),
                             );
                           },
                           child: Card(

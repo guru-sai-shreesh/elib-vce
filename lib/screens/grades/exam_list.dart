@@ -5,22 +5,29 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ExamList extends StatefulWidget {
-  const ExamList({Key? key}) : super(key: key);
+  final String sem;
+  const ExamList({required this.sem, Key? key}) : super(key: key);
 
   @override
-  State<ExamList> createState() => _ExamListState();
+  State<ExamList> createState() => _ExamListState(sem: sem);
 }
 
 class _ExamListState extends State<ExamList> {
+  final String sem;
+  _ExamListState({required this.sem});
   @override
   Widget build(BuildContext context) {
     final List<String> examList = <String>[
+      'Assignment1',
+      'Assignment2',
+      'Assignment3',
       'Quiz 1',
       'Internal 1',
       'Quiz 2',
       'Internal 2',
       'Quiz 3',
-      'Sem',
+      'Sessional Marks',
+      'External Grades',
     ];
     return Container(
       color: AppColors.primaryBackgroundColor,
@@ -38,7 +45,9 @@ class _ExamListState extends State<ExamList> {
                 return GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: ((context) => GradeDisplay())),
+                      MaterialPageRoute(
+                          builder: ((context) =>
+                              GradeDisplay(exam: examList[index], sem: sem))),
                     );
                   },
                   child: Card(
