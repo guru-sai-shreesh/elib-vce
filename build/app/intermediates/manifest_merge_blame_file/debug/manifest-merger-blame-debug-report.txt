@@ -50,7 +50,7 @@
 32    <application
 33        android:name="android.app.Application"
 34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-34-->[androidx.core:core:1.6.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/AndroidManifest.xml:24:18-86
+34-->[androidx.core:core:1.6.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/726b6122d4806ec0835a371fb26e2c3b/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 35        android:debuggable="true"
 36        android:icon="@mipmap/ic_launcher"
 37        android:label="e_vce"
@@ -113,34 +113,43 @@
 82-->[:image_picker] /Users/gurusaishreeshtirumalla/elib-vce/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 83        </provider>
 84
-85        <uses-library
-85-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-86            android:name="androidx.window.extensions"
-86-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-87            android:required="false" />
-87-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-88        <uses-library
-88-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-89            android:name="androidx.window.sidecar"
-89-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-90            android:required="false" />
-90-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-91
-92        <activity
-92-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:23:9-26:75
-93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-93-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:24:13-79
-94            android:exported="false"
-94-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:25:13-37
-95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-95-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/72f9c8b7a1cbf6e2426e2d2ec2229806/jetified-play-services-base-17.4.0/AndroidManifest.xml:26:13-72
+85        <activity
+85-->[:url_launcher_android] /Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+86            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+86-->[:url_launcher_android] /Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+87            android:exported="false"
+87-->[:url_launcher_android] /Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+88            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+88-->[:url_launcher_android] /Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+89
+90        <uses-library
+90-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/da3c2807ab5fe04f7cb414296ce1c04c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+91            android:name="androidx.window.extensions"
+91-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/da3c2807ab5fe04f7cb414296ce1c04c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+92            android:required="false" />
+92-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/da3c2807ab5fe04f7cb414296ce1c04c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+93        <uses-library
+93-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/da3c2807ab5fe04f7cb414296ce1c04c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+94            android:name="androidx.window.sidecar"
+94-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/da3c2807ab5fe04f7cb414296ce1c04c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+95            android:required="false" />
+95-->[androidx.window:window:1.0.0-beta04] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/da3c2807ab5fe04f7cb414296ce1c04c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 96
-97        <meta-data
-97-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:23:9-25:69
-98            android:name="com.google.android.gms.version"
-98-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:24:13-58
-99            android:value="@integer/google_play_services_version" />
-99-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-2/files-2.1/a454e0063e5a1aeaffd053a3c7a1c5c0/jetified-play-services-basement-17.4.0/AndroidManifest.xml:25:13-66
-100    </application>
+97        <activity
+97-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/a256d4ca2679245111a6c4113f093f4b/transformed/jetified-play-services-base-17.4.0/AndroidManifest.xml:23:9-26:75
+98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+98-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/a256d4ca2679245111a6c4113f093f4b/transformed/jetified-play-services-base-17.4.0/AndroidManifest.xml:24:13-79
+99            android:exported="false"
+99-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/a256d4ca2679245111a6c4113f093f4b/transformed/jetified-play-services-base-17.4.0/AndroidManifest.xml:25:13-37
+100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+100-->[com.google.android.gms:play-services-base:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/a256d4ca2679245111a6c4113f093f4b/transformed/jetified-play-services-base-17.4.0/AndroidManifest.xml:26:13-72
 101
-102</manifest>
+102        <meta-data
+102-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/622ea6d74780f8826ef92e9713ba507a/transformed/jetified-play-services-basement-17.4.0/AndroidManifest.xml:23:9-25:69
+103            android:name="com.google.android.gms.version"
+103-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/622ea6d74780f8826ef92e9713ba507a/transformed/jetified-play-services-basement-17.4.0/AndroidManifest.xml:24:13-58
+104            android:value="@integer/google_play_services_version" />
+104-->[com.google.android.gms:play-services-basement:17.4.0] /Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/622ea6d74780f8826ef92e9713ba507a/transformed/jetified-play-services-basement-17.4.0/AndroidManifest.xml:25:13-66
+105    </application>
+106
+107</manifest>

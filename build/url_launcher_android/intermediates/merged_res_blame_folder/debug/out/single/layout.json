@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/726b6122d4806ec0835a371fb26e2c3b/transformed/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/726b6122d4806ec0835a371fb26e2c3b/transformed/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/res/merged/debug/layout/custom_dialog.xml",
+        "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/726b6122d4806ec0835a371fb26e2c3b/transformed/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/726b6122d4806ec0835a371fb26e2c3b/transformed/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/726b6122d4806ec0835a371fb26e2c3b/transformed/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/gurusaishreeshtirumalla/elib-vce/build/url_launcher_android/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/gurusaishreeshtirumalla/.gradle/caches/transforms-3/726b6122d4806ec0835a371fb26e2c3b/transformed/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    }
+]
