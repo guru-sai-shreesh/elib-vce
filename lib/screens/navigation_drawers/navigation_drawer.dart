@@ -8,6 +8,7 @@ import 'package:e_vce/screens/exam_papers/exam_parers.dart';
 import 'package:e_vce/screens/grades/grades.dart';
 import 'package:e_vce/screens/liked.dart';
 import 'package:e_vce/screens/my_attendence/my_attendence.dart';
+import 'package:e_vce/screens/profile/profile.dart';
 import 'package:e_vce/screens/projects/projects.dart';
 import 'package:e_vce/screens/resources.dart';
 import 'package:e_vce/screens/saved/saved.dart';
@@ -28,10 +29,28 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
       child: ListView(
         children: <Widget>[
           UserAccountsDrawerHeader(
-            currentAccountPicture: CircleAvatar(
-              backgroundColor: Colors.cyan[900],
-              foregroundImage: AssetImage('assets/images/profile.jpg'),
-              child: Text("G"),
+            onDetailsPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  settings: RouteSettings(name: "/search_book"),
+                  builder: (context) => Profile(),
+                ),
+              );
+            },
+            currentAccountPicture: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    settings: RouteSettings(name: "/search_book"),
+                    builder: (context) => Profile(),
+                  ),
+                );
+              },
+              child: CircleAvatar(
+                backgroundColor: Colors.cyan[900],
+                foregroundImage: AssetImage('assets/images/profile.jpg'),
+                child: Text("G"),
+              ),
             ),
             accountName: Text("Tirumalla Guru sai shreeesh"),
             accountEmail: Text("guru.sai.shreesh@gmail.com"),

@@ -6,7 +6,7 @@
 	<dict>
 		<key>DKImagePickerController.bundle/Assets.car</key>
 		<data>
-		mf3FhlbOfx/hNRBXNZ9o1wd8RAQ=
+		E9+8zTp1/hPqx/F1FimTehVrUf0=
 		</data>
 		<key>DKImagePickerController.bundle/Base.lproj/DKImagePickerController.strings</key>
 		<dict>
@@ -19,11 +19,11 @@
 		</dict>
 		<key>DKImagePickerController.bundle/Info.plist</key>
 		<data>
-		24I+Hj8TvV04RYV1BKalAEUhJvQ=
+		9jmocaeKCWjthE+V7em5NtGsr/E=
 		</data>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		rakLiA53SucBLyWM5wKs6hbcpLM=
+		6HNMh/vp80VKL26HEFZGH21Zj/A=
 		</data>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -31,11 +31,11 @@
 		</data>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		aNA35xQToj+y2X2+jBiiwrfRqGE=
+		R5qxfvJpftXtuS/vTr3nG5BZS0k=
 		</data>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		9FkBC+8Az1denXBAt/92luMcv/w=
+		HVatms4JLV1fXb0sMqYVFRUYG4k=
 		</data>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -214,7 +214,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		AgPrOgP5+Aqe8op5ARuxRwnJRVM=
+		Eb6Lf9v/dfZHBEzFFkFaK2mYWp0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -223,7 +223,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xlgi5inQCnjlD5XGaATajxP4GNvEwE/ehgKVyUr9kA0=
+			KS0KQocecvegb/rslAcfC8ZT9vnPnfkf4tPuK4KBRow=
 			</data>
 		</dict>
 		<key>DKImagePickerController.bundle/Base.lproj/DKImagePickerController.strings</key>
@@ -239,14 +239,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			htU9+G5ZJOcCor4b2h3/ThXUddxW/q/qXIyl2jh9pcs=
+			kKiPc0ThCouLV1x0TNdiQkWEcfLEzVGujbB9YB2eZM4=
 			</data>
 		</dict>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/gGeY8cVs0KlrMHTBmkxBlBLj76tb0UlJVZMQpZ1fCc=
+			G2f66cg7m+SMi/9BJndeuPmDxCO+mXIEQ0oOkVrMSZs=
 			</data>
 		</dict>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeRequirements</key>
@@ -260,14 +260,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A1GUZ5240sRfO/wMMRirbsBNKGxmUSD26TtdUGdWEBc=
+			kn1QkbucjhPPEMAepNnh6yPJh8O9dYUdfmLM/fWmSSA=
 			</data>
 		</dict>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O7TpXGoKJ1hn5iPYRi/dIlED8ayL0CbY+yHxGtGEZjU=
+			Fdv9rxR1y0ERFGnnclwjq65ji56MTo+vvhpCOVZ/luI=
 			</data>
 		</dict>
 		<key>DKImagePickerController.bundle/_CodeSignature/CodeSignature</key>
