@@ -55,7 +55,7 @@ class _CampusTabState extends State<CampusTab> {
                           image: DecorationImage(
                               image: NetworkImage(campusSubsList[index]
                                       .image_address ??
-                                  "https://www.acm.org/binaries/content/gallery/acm/ctas/publications/digital-library-logo.jpg"),
+                                  "https://www.news-medical.net/images/Article_Images/ImageForArticle_22740_16564268624824428.jpg"),
                               fit: BoxFit.fill)),
                     ),
                   ),

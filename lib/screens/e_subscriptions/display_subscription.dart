@@ -133,7 +133,7 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
                             image: NetworkImage(popularSubscriptionModel
                                     .image_address ??
                                 "https://www.acm.org/binaries/content/gallery/acm/ctas/publications/digital-library-logo.jpg"),
-                            fit: BoxFit.fill,
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
